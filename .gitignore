@@ -2,4 +2,4 @@
 gerber/
 *backups/
 *.zip
-#auto_saved_files#
+*auto_*
