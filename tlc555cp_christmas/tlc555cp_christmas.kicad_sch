@@ -544,7 +544,6 @@
     )
   )
 
-
   (junction (at 100.33 78.74) (diameter 0) (color 0 0 0 0)
     (uuid 21a8ad71-81bb-4ec5-a616-3277a69a4c1f)
   )
@@ -616,23 +615,14 @@
     (uuid fcf78c57-52ee-42ed-b972-8caac38febc2)
   )
 
-  (text "300s = R(100uF) -> R = 300/(100uF) = 3MOhms" (at 198.12 92.71 0)
+  (text "t=RC=(10Mohm)(3.3uF) = 33s" (at 191.77 85.09 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 0c7c1370-9373-43d3-84bb-14d774022954)
-  )
-  (text "use the 1Mohm for now" (at 196.85 68.58 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 84a4cd82-0386-4fdf-b1a5-92def3939692)
+    (uuid 61f24947-0ded-4f05-9219-16490ce5e849)
   )
   (text "V=IR\nV=Vcc - Vled = 3V - 2V = 1V\nR=V/I = 1V/10mA = 100ohms\n\nI and Vled are take from this\nparticular LED: https://www.digikey.ca/en/products/detail/sunled/XLUG11D/4745837\n\nUse 220 ohm values for now."
-    (at 101.6 149.86 0)
+    (at 88.9 151.13 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 95c44bc9-11fd-4bcc-b7ac-db6366222c7d)
-  )
-  (text "30s = RC -> C = 30s/R = 30s/4700 ohms = 6.4mF\nDo again\nC = 30s/100000ohms = .3mF"
-    (at 196.85 87.63 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid dec9bfc7-538e-40ff-abdb-ef6daffe5ad9)
   )
 
   (global_label "output" (shape input) (at 106.68 118.11 180) (fields_autoplaced)
@@ -684,7 +674,7 @@
     (property "Reference" "C2" (id 0) (at 191.77 94.3609 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100u" (id 1) (at 191.77 96.9009 0)
+    (property "Value" "3.3u" (id 1) (at 191.77 96.9009 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" (id 2) (at 188.9252 100.33 0)
@@ -1240,7 +1230,7 @@
     (property "Reference" "R3" (id 0) (at 190.5 66.0399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "220k" (id 1) (at 190.5 68.5799 0)
+    (property "Value" "10M" (id 1) (at 190.5 68.5799 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" (id 2) (at 186.182 67.31 90)
@@ -1334,7 +1324,7 @@
       (reference "C1") (unit 1) (value "0.1u") (footprint "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm")
     )
     (path "/04de272d-6ab3-4595-b8f1-32ad84c01e5f"
-      (reference "C2") (unit 1) (value "100u") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm")
+      (reference "C2") (unit 1) (value "3.3u") (footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm")
     )
     (path "/ec7b9779-5c2e-4e86-88dc-be53252ebba9"
       (reference "D1") (unit 1) (value "LED") (footprint "LED_THT:LED_D5.0mm")
@@ -1358,7 +1348,7 @@
       (reference "R2") (unit 1) (value "220") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
     )
     (path "/f821fc82-b807-4424-94d1-4d16b48aac1e"
-      (reference "R3") (unit 1) (value "220k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
+      (reference "R3") (unit 1) (value "10M") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
     )
     (path "/27556d9f-cb64-4ecd-a410-d95fd8374a03"
       (reference "R4") (unit 1) (value "220") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
