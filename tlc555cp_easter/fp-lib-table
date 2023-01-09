@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "egg_footprint")(type "KiCad")(uri "${KIPRJMOD}/egg_footprint")(options "")(descr ""))
+)
