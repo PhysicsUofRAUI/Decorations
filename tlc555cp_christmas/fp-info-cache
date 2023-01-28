@@ -1,4 +1,4 @@
-20882381518046792
+20884060006617293
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87436,6 +87436,13 @@ footprints
 0
 2
 2
+footprints
+SW_PUSH-12mm_4_pins
+SW PUSH 12mm https://www.e-switch.com/system/asset/product_line/data_sheet/143/TL1100.pdf
+tact sw push 12mm
+0
+4
+4
 footprints
 SW_PUSH-12mm_kody
 SW PUSH 12mm https://www.e-switch.com/system/asset/product_line/data_sheet/143/TL1100.pdf
